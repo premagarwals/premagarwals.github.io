@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Passion+One&family=Playfair+Display:wght@700&family=Rowdies:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #151515;
+    color: #f1f2f3;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    overflow-x: hidden;
+}
+
+.top{
+    margin: 50px 30px;
+    position: relative;
+}
+.top .top1{
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+}
+.top .top1 h1{
+    position: relative;
+    display: inline-block;
+}
+.top .top1 h1::before{
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: #F75602;
+    box-shadow: 0 0 10px 1px #FF4B4B,
+                0 0 20px 2px #FF4B4B,
+                0 0 35px 5px #FF4B4B,
+                0 0 60px 8px #FF4B4B,
+                0 0 90px 14px #FF4B4B;
+    z-index: -1;
+    border-radius: 50%;
+    animation: flick 1s infinite;
+    animation-delay: 0.2s;
+}
+.top .top1 h1 span, span{
+    color: #F75602;
+    text-shadow: 0 0 20px #FF4B4B,
+                 0 0 60px #FF4B4B,
+                 0 0 90px #FF4B4B;
+}
+.flick{
+    animation: flick 1s ease-out infinite;
+}
+.flick:nth-child(odd){
+    animation-delay: 0.4s;
+}
+
+@keyframes flick{
+    0%{opacity: 1;}
+    2%{opacity: 0;}
+    10%{opacity: 1;}
+    12%{opacity: 0;}
+    14%{opacity: 1;}
+    82%{opacity: 1;}
+    84%{opacity: 0;}
+    }
+.top .top1 p{
+    position: relative;
+    float: right;
+    text-align: right;
+    width: 75vw;
+    margin-top: 30px;
+}
+.top .top1 p span{
+    font-size: 30px;
+    font-family: "Passion one", cursive;
+}
+.top .top2{
+    margin-top: 100px;
+    padding: 30px 10px;
+    border-left: 10px solid #f1f2f3;
+    background-color: #FF2929;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 10px 10px 0px rgba(150,0,0,.5);
+}
+.top .top2 p:nth-child(1){
+    font-family: 'Playfair Display',serif;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    margin-left: 10px;
+    color: #fff;
+}
+.top .top2 p:nth-child(2){
+    padding: 20px;
+    font-size: 15px;
+}
+.menu{
+    overflow: hidden;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+.menu img{
+    position: fixed;
+    width: 25px;
+    top: 20px;
+    right: 20px;
+    opacity: 0.5;
+    transition: 0.5s;
+    z-index: 11;
+}
+.menu img:hover{
+    opacity: 1;
+}
+.menu #menu-child{
+    position: fixed;
+    width: 0vw;
+    height: 0vw;
+    bottom: 100vh;
+    right: 0vw;
+    border-radius: 50%;
+    background-color: #920000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 200vw;
+    color: rgba(0,0,0,0);
+}
+
+.menu #menu-child div ul{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-100%);
+    list-style: none;
+    text-align: center;
+}
+.menu #menu-child div ul li{
+    margin: 10px 0;
+}
+.menu #menu-child div ul li a{
+    color: #f1f2f3;
+    text-decoration: none;
+}
+.quote{
+    padding: 50px;
+    width: calc(100vw - 100px);
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: 'Playfair Display',serif;
+}
+#hire{
+    width: 100vw;
+    text-align: center;
+}
+#hire .hire{
+    padding: 20px 30px;
+    font-size: 15px;
+    font-family: sans-serif;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #F75602;
+    text-shadow: 0 0 20px #FF4B4B,
+                 0 0 60px #FF4B4B,
+                 0 0 90px #FF4B4B;
+    transition: 0.5s;
+    border-bottom: 3px solid #F75602;
+}
+#hire .hire:hover{
+    background-color: #FF2929;
+    box-shadow: 0px 0px 30px #920000,
+                0px 0px 50px #920000,
+                0px 0px 90px #920000;
+    text-shadow: none;
+    color: #151515;
+    border-width: 0px;
+}
+.cont{
+    position: relative;
+    width: calc(100vw - 60px);
+    padding: 30px;
+}
+.cont p { 
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.css::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/light.jpg');
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+    box-shadow: 0px 0px 30px 20px black;
+}
+
+
+.cost::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/cash.jpg');
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+    box-shadow: 0px 0px 30px 20px black;
+}
+.contact{
+    margin: 20px;
+}
+.contact h4{
+    margin-bottom: 40px;
+}
+.contact fieldset{
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.contact input,.contact textarea, .contact button{
+    width: calc(100% - 40px);
+    height: 30px;
+    background: transparent;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-size: 15px;
+    color: rgba(255,255,255,.7);
+    box-shadow: inset 5px 5px 10px rgba(255,255,255,.05),
+                inset -5px -5px 10px rgba(0,0,0,.5);
+    border-radius: 10px 0;
+    outline: none;
+    font-family: cursive;
+}
+.contact textarea{
+    height: 100px;
+}
+.contact fieldset button{
+    display: flex;
+    width: auto;
+    padding: 30px 40px;
+    background-color: #FF2929;
+    margin-top: 30px;
+    align-items: center;
+    box-shadow: 0px 0px 30px #920000,
+                0px 0px 50px #920000;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #151515;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-family: sans-serif;
+    transition: 0.2s;
+}
+.contact fieldset button:active{
+    box-shadow: 0px 0px 30px #920000,
+                0px 0px 50px #920000,
+                0px 0px 80px #920000;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 50;
+    padding: 28px 40px;
+    background-color: #FF3535;
+}
+footer{
+    margin: 0;
+    padding: 0;
+    
+}
+footer ul{
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    margin: 5px 10px;
+}
+footer ul li a{
+    color: #f1f2f3;
+    text-decoration: none;
+    border-bottom: 0px solid #fff;
+    transition: 0.5s;
+}
+footer ul li a:hover{
+    border-bottom: 1px solid #F75602;
+    margin-bottom: 40px;
+    color: #F75602;
+    text-shadow: 0 0 20px #FF4B4B,
+                 0 0 60px #FF4B4B,
+                 0 0 90px #FF4B4B;
+}
+footer section{
+    display: flex;
+    width: 100vw;
+    padding: 0;
+    justify-content: center;
+    align-items: flex-start;
+}
+footer section div{
+    display: flex;
+    width: 50vw;
+    height: aut;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+footer section div h5{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+footer section div a{
+    font-size: 15px;
+    font-weight: 200;
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+    margin: 5px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+footer section div a:hover, footer section div .active{
+    color: #F75602;
+    text-shadow: 0 0 20px #FF4B4B,
+                 0 0 60px #FF4B4B,
+                 0 0 90px #FF4B4B;
+}
+footer section div .active{
+    animation: flick 1s infinite;
+}
+.end{
+    background-color: #000;
+    width: calc(100vw - 40px);
+    font-size: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 15px;
+}

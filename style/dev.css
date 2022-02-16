@@ -1,0 +1,40 @@
+.dp{
+    width: 100vw;
+    font-family: sans-serif;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dp img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.dp h6{
+    font-size: 20px;
+    margin: 10px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.dp p{
+    font-size: 15px;
+    color: rgba(255,255,255,.5);
+}
+.dp q{
+    margin-top: 30px;
+    font-size: 15px;
+    opacity: 0.5;
+    font-family: cursive;
+}
+.info{
+    margin: 30px;
+    font-size: 15px;
+    text-align: justify;
+    padding: 30px;
+    border-left: 3px solid #f1f2f3;
+}

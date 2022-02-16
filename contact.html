@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Contact </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> 
+        <link rel="stylesheet" type="text/css" href="style/main.css">
+        <link rel="stylesheet" type="text/css" href="style/contact.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script> 
+        <script src="script/main.js">  </script>
+    </head>
+    <body>
+        <section class="top"> 
+         <div data-aos="fade-right" class="top1">  
+             <h1> Prem A<span class="flick">g</span>arwal's </h1>
+             <p> <span> “ </span>Hey! I'm Prem. Welcome to this dreamy world! <span> " </span></p>
+         </div>
+     </section>
+     <div class="comment cont">  
+           <form class="contact" method="post" onsubmit="send()">
+            <h4 data-aos="zoom-in-down">What's making you <span class="flick">curious</span>?</h4>
+            <fieldset>
+              <input id="name" placeholder="Your name" type="text" tabindex="1" required>
+            </fieldset>
+            <fieldset>
+              <input id="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <input id="phone" placeholder="Your Phone Number" type="tel" tabindex="3" pattern="[0-9]{10}" required>
+            </fieldset>
+            <fieldset>
+              <textarea id="say" placeholder="Type your Message Here...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+           </form>
+     </div>
+    </body>
+    <footer>  
+        <ul id="acc">
+            <li> <a href="#"> <i class="bx bxl-facebook">  </i> </a> </li>
+            <li> <a href="#"> <i class="bx bxl-instagram">  </i> </a> </li>
+            <li> <a href="#"> <i class="bx bxl-github">  </i> </a> </li>
+            <li> <a href="#"> <i class="bx bxl-linkedin">  </i> </a> </li>
+            <li> <a href="#"> <i class="bx bxl-gmail">  </i> </a> </li>
+        </ul>
+        <section>  
+        <div>  
+            <h5> Pages </h5>
+            
+            <a href="index.html"> home </a> 
+            <a href="#"> dev info </a> 
+            <a href="#"> features </a>
+            <a href="#" class="active"> contact </a> 
+            
+        </div>
+        </section>
+        <section class="end"> 
+            <p> You are visiting premagarwals.github.io - Prem Agarwal's. Copyright 2022, all rights reserved. </p>
+        </section>
+    </footer>
+</html>
