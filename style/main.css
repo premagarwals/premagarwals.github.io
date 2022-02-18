@@ -176,6 +176,10 @@ body{
     transition: 0.5s;
     border-bottom: 3px solid #F75602;
 }
+#hire .hire{
+    text-decoration: none;
+    color: #F75602;
+}
 #hire .hire:hover{
     background-color: #FF2929;
     box-shadow: 0px 0px 30px #920000,
@@ -184,6 +188,9 @@ body{
     text-shadow: none;
     color: #151515;
     border-width: 0px;
+}
+#hire .hire:hover a{
+   color: #151515;
 }
 .cont{
     position: relative;
