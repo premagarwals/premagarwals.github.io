@@ -176,7 +176,7 @@ body{
     transition: 0.5s;
     border-bottom: 3px solid #F75602;
 }
-#hire .hire{
+#hire .hire a{
     text-decoration: none;
     color: #F75602;
 }
