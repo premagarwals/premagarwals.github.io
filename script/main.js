@@ -29,19 +29,18 @@ function shortsend(){
 }
 
 function openmenu(){
-    menu = document.getElementById("menu-child").style;
-    if(menu.height == "200vw"){
+        menu = document.getElementById("menu-child").style;
         menu.height = "0vw";
         menu.width = "0vw";
         menu.bottom = "100vh";
         menu.right = "0vw";
         menu.color = "rgba(0,0,0,0)";
-    }
-    else{
+
+function closemenu(){
+        menu = document.getElementById("menu-child").style;
         menu.height = "200vw";
         menu.width = "200vw";
         menu.bottom = "30vh";
         menu.right = "-75vw";
         menu.color = "rgba(0,0,0,.7)";
-    }
 }
