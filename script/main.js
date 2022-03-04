@@ -35,7 +35,7 @@ function openmenu(){
         menu.bottom = "100vh";
         menu.right = "0vw";
         menu.color = "rgba(0,0,0,0)";
-
+}
 function closemenu(){
         menu = document.getElementById("menu-child").style;
         menu.height = "200vw";
