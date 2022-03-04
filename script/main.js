@@ -28,7 +28,7 @@ function shortsend(){
     location.href = link; 
 }
 
-function openmenu(){
+function closemenu(){
         menu = document.getElementById("menu-child").style;
         menu.height = "0vw";
         menu.width = "0vw";
@@ -36,7 +36,7 @@ function openmenu(){
         menu.right = "0vw";
         menu.color = "rgba(0,0,0,0)";
 }
-function closemenu(){
+function openmenu(){
         menu = document.getElementById("menu-child").style;
         menu.height = "200vw";
         menu.width = "200vw";
