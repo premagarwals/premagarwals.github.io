@@ -22,11 +22,11 @@
          </div>
      </section>
      <section class="menu">  
-       <p> <img src="image/menu.jpg" onclick="openmenu()">  </i></p>
-         <div id="menu-child">  
+       <p> <img src="image/menu.jpg" onclick="openmenu(event)">  </i></p>
+         <div id="menu-child" onclick="event.stopPropagation()">  
            <div>  
              <ul>
-               <li> <a href="#top" onclick="openmenu()"> INTRO </a> </li>
+               <li> <a href="#top"> INTRO </a> </li>
                <li> <a href="dev.html"> ABOUT </a> </li>
                <li> <a href="feature.html"> FEATURES </a> </li>
                <li> <a href="contact.html"> CONTACT </a> </li>
